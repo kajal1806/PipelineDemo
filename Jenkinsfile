@@ -4,7 +4,7 @@ node {
 	
 	//Git Cloning
 	stage('Git Cloning') { 
-	  git "https://github.com/Vishwesh126/DevOpsMindTree301.git"
+	  git "https://github.com/kajal1806/DevOpsMindTree301.git"
 	  echo "Clone Completed"
 	}
 	
@@ -32,7 +32,7 @@ node {
 		def uploadSpec = """{		
 			"files":[
 			{
-				"pattern":"/var/lib/jenkins/workspace/FinalPipelineDemo/${PROJECT_PATH}/target/*.jar",
+				"pattern":"/var/lib/jenkins/workspace/pipeline-project/${PROJECT_PATH}/target/*.jar",
 				"target":"jenkins/atmosphere/Build #${env.BUILD_NUMBER}"
 			}
 			]
