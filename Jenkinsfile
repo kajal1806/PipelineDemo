@@ -32,7 +32,7 @@ node {
 		def uploadSpec = """{		
 			"files":[
 			{
-				"pattern":"/var/lib/jenkins/workspace/pipeline-project/${PROJECT_PATH}/target/*.jar",
+				"pattern":"/root/.jenkins/workspace/pipeline-project/${PROJECT_PATH}/target/*.jar",
 				"target":"jenkins/atmosphere/Build #${env.BUILD_NUMBER}"
 			}
 			]
